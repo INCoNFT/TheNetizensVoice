@@ -152,8 +152,7 @@
 					if (typeof window.ethereum !== 'undefined') {
 						// Metamask atau Web3 lain terinstall.
 						console.log('MetaMask is installed! ;)');
-						
-
+						ethereum.request({ method: 'eth_requestAccounts' });
 					}else{
 						// Metamask atau web3 lain belum terinstall, tanya user mau install ga?
 						console.log('MetaMask Not installed. Tanya ah mau gak');
