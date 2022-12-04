@@ -106,7 +106,12 @@
           }
         );
     });
+
   });
+
+  $('#comingsoon').click(function () {
+    $('#comingsoon').popover('toggle');
+  })
 
   function onScroll(event) {
     var scrollPos = $(document).scrollTop();
