@@ -112,6 +112,9 @@
   $('#comingsoon').click(function () {
     $('#comingsoon').popover('toggle');
   })
+  $('#launching').click(function () {
+    $('#launching').popover('toggle');
+  })
 
   function onScroll(event) {
     var scrollPos = $(document).scrollTop();
