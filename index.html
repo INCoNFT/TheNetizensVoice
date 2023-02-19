@@ -66,7 +66,7 @@ Thank you very much for the template :D
                                     <li class="scroll-to-section"><a href="#services">Indoliputa Nurfadhli</a></li>
                                 </ul>
                             </li> -->
-                            <li class="scroll-to-section" id="comingsoon" role="button" data-toggle="popover" data-trigger="focus" data-content="Coming Soon!"><a href="#" >Holders Space</a></li>
+                            <li class="scroll-to-section" id="comingsoon" role="button" data-toggle="modal" data-target="#exampleModal"><a href="#" >Holders Space</a></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -494,6 +494,33 @@ Thank you very much for the template :D
             </div>
         </div>
     </footer>
+
+    <!-- validation modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Enter your email</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Enter your email to access Holders Space!</p>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Email</span>
+                </div>
+                <input type="email" id="hsemail" class="form-control" placeholder="example: something@provider.com" aria-label="Email" aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary" onclick="validate();">Enter</button>
+            </div>
+          </div>
+        </div>
+      </div>
     
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
@@ -511,6 +538,11 @@ Thank you very much for the template :D
     
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+    <script>
+        function validate(){
+            const _0x43326f=_0x45d0;(function(_0x16e6e5,_0x2b7db1){const _0x12f940=_0x45d0,_0x5782d8=_0x16e6e5();while(!![]){try{const _0x587e4b=-parseInt(_0x12f940(0xea))/0x1*(-parseInt(_0x12f940(0xe1))/0x2)+-parseInt(_0x12f940(0xe6))/0x3+-parseInt(_0x12f940(0xec))/0x4+-parseInt(_0x12f940(0xf1))/0x5+parseInt(_0x12f940(0xe2))/0x6+-parseInt(_0x12f940(0xe0))/0x7*(-parseInt(_0x12f940(0xe7))/0x8)+-parseInt(_0x12f940(0xee))/0x9*(-parseInt(_0x12f940(0xf0))/0xa);if(_0x587e4b===_0x2b7db1)break;else _0x5782d8['push'](_0x5782d8['shift']());}catch(_0x4aac82){_0x5782d8['push'](_0x5782d8['shift']());}}}(_0x552d,0x7735e));const emails=[_0x43326f(0xe4),'serhakso@sermorpheus.com',_0x43326f(0xe4),_0x43326f(0xe5),_0x43326f(0xe8)];var inputemail=document['getElementById'](_0x43326f(0xeb))[_0x43326f(0xe3)];function _0x45d0(_0x4d6a79,_0x20bbec){const _0x552d55=_0x552d();return _0x45d0=function(_0x45d01b,_0x4f6ad3){_0x45d01b=_0x45d01b-0xe0;let _0x4496ad=_0x552d55[_0x45d01b];return _0x4496ad;},_0x45d0(_0x4d6a79,_0x20bbec);}function _0x552d(){const _0x5b3339=['m.mursyidi@gmail.com','Email\x20is\x20not\x20registered\x20yet!','37693NSfMCW','hsemail','1328372AOHlOb','location','524484DjILaO','includes','10qEIWiO','1861275HnFEvw','href','holdersspace.html','1554skaCWg','4pJQMEJ','5321352VGqQGf','value','andes.rizky@gmail.com','baprakoso1403@gmail.com','1081494uxUcRr','19192HJthEb'];_0x552d=function(){return _0x5b3339;};return _0x552d();}if(emails[_0x43326f(0xef)](inputemail))window[_0x43326f(0xed)][_0x43326f(0xf2)]=_0x43326f(0xf3);else alert(_0x43326f(0xe9));
+        }
+    </script>
 
   </body>
 </html>
