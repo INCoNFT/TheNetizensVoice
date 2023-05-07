@@ -1,33 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TNV - Holder's Space</title>
-    <link rel="icon" href="assets/images/tnvtnv.png">
-    <style>
-        body{
-            background:url(assets/images/banner-bg-2.png);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100vw 100vh;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-    </style>
-    
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <title>Holder's Space</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    /* Sticky Navbar */
+
+    body{
+        background:#ebebeb;
+    }
+    .navbar-fixed {
+      position: fixed;
+      height:100px;
+      z-index: 1000;
+      top: 0;
+      width: 100%;
+    }
+    #title{
+        margin-top:16px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top:200px
+    }
+    .box {
+        width: 600px;
+        height: 600px;
+        background-color: #f2f2f2;
+        box-shadow: 7px 7px 15px #b9b7b7;
+        margin-bottom: 50px;
+    }
+
+    .box .pic{
+      width:100%;
+      background-position: center;
+      height:70%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .box .b_title{
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+    .box .b_caption{
+      margin-top:10px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .box #pic1{
+      background-image: url('./HSNL/1_-_BIRTHDAY_GIFT_.jpg')
+    }
+
+    /* Mobile Responsive */
+    @media only screen and (max-width: 992px) {
+      .navbar-fixed {
+        position: relative;
+        height:60px;
+      }
+      #title{
+        margin-top:0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <br><br>
-    <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-    <a href="https://logwork.com/countdown-timer" id="timer" class="countdown-timer" data-style="columns" data-timezone="Asia/Jakarta" data-date="2023-02-19 19:00">Exclusive single preview starts in</a>
+  <!-- Navbar -->
+  <nav class="navbar-fixed light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!" id="title" class="brand-logo center">Holder's Space</a>
+    </div>
+  </nav>
 
-    <center>
-        <a href="https://meet.google.com/vvu-fkmf-mmr" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Link to Event</a>
-    </center>
+  <!-- content -->
+  <div class="center">
+    <div class="box">
+      <div class="pic" id="pic1"></div>
+      <div class="b_title" id="text1">Birthday</div>
+      <div class="b_caption" id="caption1">GUE DIKASIH HADIAH PROYEKTORAN GITU PAS LAGI TIDUR DI TEMBAKIN KE MUKA. SILAU BANGET COYYYY TAPI LOVE HAHAHA</div>
+    </div>
+    <!-- <div class="box"></div> -->
+    <!-- <div class="box"></div> -->
+  </div>
 
-    
-    <script src="assets/js/bootstrap.min.js"></script>
+  <div class="fixed-action-btn tooltipped">
+    <a class="btn-floating btn-large blue" href="mailto:willywinarko@gmail.com?subject=Feedback for you&body=Tulis feedback apapun yang kamu mau!">
+      <i 
+       class="large material-icons tooltipped" data-position="top" data-tooltip="Email langsung ke Willy Winarko!">email</i>
+    </a>
+  </div>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, options);
+      });
+        
+    </script>
 </body>
 </html>
+
